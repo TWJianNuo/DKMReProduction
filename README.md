@@ -1,11 +1,13 @@
+## Need Help on Reproduction!!!
+
 ## Reproduced ScanNet Flow Evaluation Results
 |       | Epe    | Out  |
 |-------|-------|------|
 | DKMv2-Reproduction | 5.32  | 0.386 |
 | DKMv2 | **4.46**  | **0.295** |
-* I benchmarked on the Flow to avoid disturbance from confidence maps. 
+* I benchmarked the Flow Performance to avoid disturbance from confidence maps. 
 * Both metrics Epe & Out are the lower the better.
-* Metric Out is off too much
+* Metrics are off too much
 
 
 ## Reproduced Megadepth1500 Results
@@ -23,16 +25,23 @@
 * I put all my environments in two requirements_conda.txt & requirements_pip.txt (from conda & pip seperataly)
 
 ## May I have......
-* May I have the environment file requirements_conda.txt & requirements_pip.txt on your end?
-``` bash
-python -m pip freeze > requirements_pip.txt
-conda list -e > requirements_conda.txt
-```
+* May I have the environment file on your end?
+
+    1.requirements_conda.txt
+    ``` bash
+    conda list -e > requirements_conda.txt
+    ```
+    2.requirements_pip.txt    
+    ``` bash
+    python -m pip freeze > requirements_pip.txt
+    ```
+ 
 * May I have the tensorboard file or other file that records losses & learning rate?
 * May I have Pickle File of One Complete Iteration? For reference:
-    1. Batch Input
-    2. Computed Loss: (Depth Loss & Confidence Loss) 
+    1. One Batch Input
+    2. Its Computed Loss: (Depth Loss & Confidence Loss) 
     3. Initialized Model Parameters
+    4. One Sample Gradient: E.g. Model.encoder.resnet.conv1.weight.grad
 
 ## Create Environment
 I created the environment manually. The machine uses a cuda version 11.3
@@ -61,7 +70,7 @@ CUDA_VISIBLE_DEVICES=0,1,2 python train/train_mega_dkm_nnparallel_wvalidation.py
 --batch_size 36 --relfrmin_eval 0 1 2 3 4 --downscale \\
 --scannetroot /scratch1/zhusheng/EMAwareFlow/scannet_test_organized
 ```
-* Validation Reproduced
+* Evaluate Flow Performance
 ``` bash
 CUDA_VISIBLE_DEVICES=0 python train/train_mega_dkm_nnparallel_wvalidation.py --experiment_name reproduce_dkm_megadepth_nnparallel_wval_bz36_09282022 --gpus 1 \\
 --data_root /scratch1/zhusheng/EMAwareFlow/MegaDepth --num_workers 48 \\
