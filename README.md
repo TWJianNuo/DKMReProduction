@@ -20,8 +20,8 @@
 * I can reproduce Test Results with released checkpoints
 * I installed Cupy, enabling local_corr.py
 * I did not freeze BatchNormalization during Reproduction
-* I am running a reproduction experiments following the exactly same environments provided. (Not Have Results Yet). In specific, not install cupy and using torch 
-* The checkpoints & Tensorboad records are put in the [Google Drive Link](https://drive.google.com/drive/folders/1Aqdmzaw7iLg884zpzDbZiajfnPZJwvZA?usp=sharing).
+* I am running a reproduction experiments following the exactly same environments provided. (Not Have Results Yet). In specific, not install cupy and using a learning rate of 1e-4 (previsouly using 4e-4). But I consider those changes are minor. 
+* The checkpoints & Tensorboad records are put in the [Google Drive Link](https://drive.google.com/drive/folders/1Aqdmzaw7iLg884zpzDbZiajfnPZJwvZA?usp=sharing). Also including the scannet test split.
 * I put all my environments in two requirements_conda.txt & requirements_pip.txt (from conda & pip seperataly)
 
 ## May I have......
