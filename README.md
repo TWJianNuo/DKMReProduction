@@ -20,7 +20,7 @@
 * I can reproduce Test Results with released checkpoints
 * I installed Cupy, enabling local_corr.py
 * I did not freeze BatchNormalization during Reproduction
-* I am running a reproduction experiments following the exactly same environments provided. (Not Have Results Yet)
+* I am running a reproduction experiments following the exactly same environments provided. (Not Have Results Yet). In specific, not install cupy and using torch 
 * The checkpoints & Tensorboad records are put in the [Google Drive Link](https://drive.google.com/drive/folders/1Aqdmzaw7iLg884zpzDbZiajfnPZJwvZA?usp=sharing).
 * I put all my environments in two requirements_conda.txt & requirements_pip.txt (from conda & pip seperataly)
 
@@ -51,7 +51,7 @@ I created the environment manually. The machine uses a cuda version 11.3
 ``` bash
 conda create -n DKMReProduction python=3.6
 conda activate DKMReProduction
-conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
 pip install einops
 pip install opencv-python
 pip install kornia
