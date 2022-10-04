@@ -42,6 +42,9 @@
     2. Its Computed Loss: (Depth Loss & Confidence Loss) 
     3. Initialized Model Parameters
     4. One Sample Gradient: E.g. Model.encoder.resnet.conv1.weight.grad
+    
+I would greatly appreciate if you could provide those validation material so that I can ensure the training codes are aligned. Thanks!
+
 
 ## Create Environment
 I created the environment manually. The machine uses a cuda version 11.3
