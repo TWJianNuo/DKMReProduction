@@ -41,7 +41,7 @@
     1. One Batch Input
     2. Its Computed Loss (Depth Loss & Confidence Loss) and Output:  
     3. Initialized Model Parameters
-    4. One Sample Gradient: E.g. Model.encoder.resnet.conv1.weight.grad
+    4. One Sample Gradient of the Batch: E.g. Model.encoder.resnet.conv1.weight.grad
     
 I would greatly appreciate if you could provide those validation material so that I can ensure the training codes are aligned. Thanks!
 
