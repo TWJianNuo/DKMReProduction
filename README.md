@@ -20,8 +20,8 @@
 * I can reproduce Test Results with released checkpoints
 * I installed Cupy, enabling local_corr.py
 * I did not freeze BatchNormalization during Reproduction
-* I am running a reproduction experiments following the exactly same environments provided. (Not Have Results Yet). In specific, not install cupy and using torch 
-* The checkpoints & Tensorboad records are put in the [Google Drive Link](https://drive.google.com/drive/folders/1Aqdmzaw7iLg884zpzDbZiajfnPZJwvZA?usp=sharing).
+* I am running a reproduction experiments following the exactly same environments provided. (Not Have Results Yet). In specific, not install cupy and using a learning rate of 1e-4 (previsouly using 4e-4). But I consider those changes are minor. 
+* The checkpoints & Tensorboad records are put in the [Google Drive Link](https://drive.google.com/drive/folders/1Aqdmzaw7iLg884zpzDbZiajfnPZJwvZA?usp=sharing). Also including the scannet test split.
 * I put all my environments in two requirements_conda.txt & requirements_pip.txt (from conda & pip seperataly)
 
 ## May I have......
@@ -39,9 +39,9 @@
 * May I have the tensorboard file or other file that records losses & learning rate?
 * May I have Pickle File of One Complete Iteration? For reference:
     1. One Batch Input
-    2. Its Computed Loss: (Depth Loss & Confidence Loss) 
+    2. Its Computed Loss (Depth Loss & Confidence Loss) and Output:  
     3. Initialized Model Parameters
-    4. One Sample Gradient: E.g. Model.encoder.resnet.conv1.weight.grad
+    4. One Sample Gradient of the Batch: E.g. Model.encoder.resnet.conv1.weight.grad
     
 I would greatly appreciate if you could provide those validation material so that I can ensure the training codes are aligned. Thanks!
 
