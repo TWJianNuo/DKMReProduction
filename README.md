@@ -39,7 +39,7 @@
 * May I have the tensorboard file or other file that records losses & learning rate?
 * May I have Pickle File of One Complete Iteration? For reference:
     1. One Batch Input
-    2. Its Computed Loss: (Depth Loss & Confidence Loss) 
+    2. Its Computed Loss (Depth Loss & Confidence Loss) and Output:  
     3. Initialized Model Parameters
     4. One Sample Gradient: E.g. Model.encoder.resnet.conv1.weight.grad
     
